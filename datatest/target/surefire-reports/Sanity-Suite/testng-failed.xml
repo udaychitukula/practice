@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite verbose="0" name="Failed suite [Sanity-Suite]">
+  <test name="loginTest(failed)">
+    <classes>
+      <class name="home.MenuBar">
+        <methods>
+          <include name="setup"/>
+          <include name="setTestResult"/>
+          <include name="validateCoursesButton"/>
+        </methods>
+      </class> <!-- home.MenuBar -->
+      <class name="home.BaseTestSuite">
+        <methods>
+          <include name="startSuite"/>
+          <include name="endSuite"/>
+        </methods>
+      </class> <!-- home.BaseTestSuite -->
+    </classes>
+  </test> <!-- loginTest(failed) -->
+</suite> <!-- Failed suite [Sanity-Suite] -->

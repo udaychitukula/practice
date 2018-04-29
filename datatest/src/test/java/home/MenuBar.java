@@ -76,6 +76,7 @@ public class MenuBar extends Base{
 		System.out.println(homePage.getVideosButton().getText());
 		homePage.getVideosButton().click();
 		log.info("Menu button verified");
+		System.out.println("");
 	}
 	@Test(priority=4)
 	public void validateInterviewGuideButton() throws IOException, InterruptedException 

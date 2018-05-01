@@ -21,11 +21,11 @@ import resoures.Base;
 
 public class MenuBar extends Base{
 	public static Logger log=LogManager.getLogger(Base.class.getName());
-	@BeforeClass
+	@BeforeClass(groups= {"Regression", "Sanity"})
 	public void testSetup() {
 		parentTest=reports.createTest("TS002","Verify MenuBar functionality");
 	}
-	@BeforeMethod
+	@BeforeMethod(groups= {"Regression", "Sanity"})
 	public void setup() throws IOException {
 		driver=initializeDriver();
 		loadPageObjets(driver);
@@ -149,7 +149,7 @@ public class MenuBar extends Base{
 		log.info("Menu button verified");
 	}
 
-	@AfterMethod
+	@AfterMethod(groups= {"Regression", "Sanity"})
 	public void setTestResult(ITestResult result) throws IOException {
 
 		String screenShot = captureScreen(driver, result);

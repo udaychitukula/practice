@@ -24,46 +24,46 @@ import resoures.Base;
 
 public class HomePageNavigation extends Base{
 	
-	@BeforeClass
+	@BeforeClass(groups= {"Regression", "Sanity"})
 	public void testSetup() {
 		parentTest=reports.createTest("TS001","Verify Login functionality");
 	}
-	@BeforeMethod
+	@BeforeMethod(groups= {"Regression", "Sanity"})
 	public void setup() throws IOException {
 		driver=initializeDriver();
 		loadPageObjets(driver);
-		childTest=parentTest.createNode("TC001", "validate login functionality with valid use ID and ped");
+		
 	}
 	
 	@Test(dataProvider="getData", groups= {"Regression", "Sanity"})
 	public void basepage_navigation(String username, String password) throws IOException
 	{
-				
-		grandChildTest=childTest.createNode("testcase_1", "base page navigation");
-		grandChildTest.assignCategory("sanity");
+		childTest=parentTest.createNode("TC001", "validate login functionality with valid use ID and ped");
+		
+		childTest.assignCategory("sanity");
 		driver.get(prop.getProperty("url"));
-		grandChildTest.pass("Navigate to URL: "+prop.getProperty("url"));
+		childTest.pass("Navigate to URL: "+prop.getProperty("url"));
 		
 		homePage.getLogin().click();
-		grandChildTest.pass("Click on Login link");
+		childTest.pass("Click on Login link");
 		
 		loginPage.enterEmail().sendKeys(username);
-		grandChildTest.pass("Enter Username: "+username);
+		childTest.pass("Enter Username: "+username);
 		
 		loginPage.enterPassword().sendKeys(password);
-		grandChildTest.pass("Enter password: "+password);
+		childTest.pass("Enter password: "+password);
 		
 		loginPage.clickLogin().click();
-		grandChildTest.pass("Clik on login button");
+		childTest.pass("Clik on login button");
 		
-		grandChildTest.pass("Expected Results: Error messege should be displayed");
+		childTest.pass("Expected Results: Error messege should be displayed");
 		Assert.assertEquals(loginPage.errorMsg().getText(), "Invalid email or password");
-		grandChildTest.pass("Expeted Result: Invalid email or password -- Actual Result: "+loginPage.errorMsg().getText());
+		childTest.pass("Expeted Result: Invalid email or password -- Actual Result: "+loginPage.errorMsg().getText());
 		
 		
 	}
 	
-	@AfterMethod
+	@AfterMethod(groups= {"Regression", "Sanity"})
 	public void setTestResult(ITestResult result) throws IOException {
 
 		String screenShot = captureScreen(driver, result);
@@ -82,7 +82,7 @@ public class HomePageNavigation extends Base{
 		reports.flush();
 		driver.close();
 	}
-	@AfterClass
+	@AfterClass(groups= {"Regression", "Sanity"})
 	public void closeup() {
 		reports.flush();
 	}

@@ -11,14 +11,14 @@ import resoures.Base;
 public class BaseTestSuite extends Base{
 	
 	
-	@BeforeSuite
+	@BeforeSuite(groups= {"Regression", "Sanity"})
     public void startSuite(ITestContext ctx)
     {
 		suiteName=ctx.getSuite().getName();
     	Base.initReports(suiteName);
     	
     	}
-	@AfterSuite
+	@AfterSuite(groups= {"Regression", "Sanity"})
 	public void endSuite()
 	{
 		reports.flush();

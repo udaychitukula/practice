@@ -31,56 +31,16 @@ div.shootout {padding:2em;border:3px #4854A8 solid}
 <body>
 <table cellspacing="0" cellpadding="0" class="result">
 <tr><th>Test</th><th class="numi">Methods<br/>Passed</th><th class="numi">Scenarios<br/>Passed</th><th class="numi"># skipped</th><th class="numi"># failed</th><th class="numi">Total<br/>Time</th><th class="numi">Included<br/>Groups</th><th class="numi">Excluded<br/>Groups</th></tr>
-<tr><td style="text-align:left;padding-right:2em">loginTest</td><td class="numi">9</td><td class="numi">9</td><td class="numi">0</td><td class="numi_attn">1</td><td class="numi">218.3 seconds</td><td class="numi"></td><td class="numi"></td></tr>
+<tr><td style="text-align:left;padding-right:2em">loginTest</td><td class="numi">6</td><td class="numi">6</td><td class="numi">0</td><td class="numi">0</td><td class="numi">237.6 seconds</td><td class="numi">Regression </td><td class="numi"></td></tr>
 </table>
 <table cellspacing="0" cellpadding="0" class="passed" id="summary">
 <tr><th>Class</th><th>Method</th><th># of<br/>Scenarios</th><th>Start</th><th>Time<br/>(ms)</th></tr>
-<tr><th colspan="4">loginTest &#8212; failed</th></tr>
-<tr class="failedodd"><td rowspan="1">home.MenuBar</td><td><a href="#m1"><b>validateCoursesButton</b>  </a></td><td class="numi">1</td><td>1525026258831</td><td class="numi">15589</td></tr>
 <tr><th colspan="4">loginTest &#8212; passed</th></tr>
-<tr class="passedodd"><td rowspan="2">home.HomePageNavigation</td><td><a href="#m2"><b>basepage_navigation</b>  </a></td><td class="numi">2</td><td>1525026178345</td><td class="numi">58195</td></tr><tr class="passedodd"><td><a href="#m3"><b>basepage_navigation</b>  </a></td><td class="numi">2</td><td>1525026178345</td><td class="numi">58195</td></tr>
-<tr class="passedeven"><td rowspan="7">home.MenuBar</td><td><a href="#m4"><b>validateHomeButton</b>  </a></td><td class="numi">1</td><td>1525026243787</td><td class="numi">8518</td></tr><tr class="passedeven"><td><a href="#m5"><b>validateVideosButton</b>  </a></td><td class="numi">1</td><td>1525026281094</td><td class="numi">9795</td></tr><tr class="passedeven"><td><a href="#m6"><b>validateInterviewGuideButton</b>  </a></td><td class="numi">1</td><td>1525026298244</td><td class="numi">6238</td></tr><tr class="passedeven"><td><a href="#m7"><b>validatePracticeButton</b>  </a></td><td class="numi">1</td><td>1525026310214</td><td class="numi">9489</td></tr><tr class="passedeven"><td><a href="#m8"><b>validateBlogButton</b>  </a></td><td class="numi">1</td><td>1525026324975</td><td class="numi">11859</td></tr><tr class="passedeven"><td><a href="#m9"><b>validateAboutButton</b>  </a></td><td class="numi">1</td><td>1525026341545</td><td class="numi">7353</td></tr><tr class="passedeven"><td><a href="#m10"><b>validateContactButton</b>  </a></td><td class="numi">1</td><td>1525026355152</td><td class="numi">7437</td></tr>
+<tr class="passedodd"><td rowspan="2">home.HomePageNavigation</td><td><a href="#m1"><b>basepage_navigation</b> (Sanity, Regression) </a></td><td class="numi">2</td><td>1525190064985</td><td class="numi">76089</td></tr><tr class="passedodd"><td><a href="#m2"><b>basepage_navigation</b> (Sanity, Regression) </a></td><td class="numi">2</td><td>1525190064985</td><td class="numi">76089</td></tr>
+<tr class="passedeven"><td rowspan="4">home.MenuBar</td><td><a href="#m3"><b>validateHomeButton</b> (Regression) </a></td><td class="numi">1</td><td>1525190159395</td><td class="numi">25494</td></tr><tr class="passedeven"><td><a href="#m4"><b>validateVideosButton</b> (Regression) </a></td><td class="numi">1</td><td>1525190197031</td><td class="numi">20024</td></tr><tr class="passedeven"><td><a href="#m5"><b>validatePracticeButton</b> (Regression) </a></td><td class="numi">1</td><td>1525190225069</td><td class="numi">10828</td></tr><tr class="passedeven"><td><a href="#m6"><b>validateAboutButton</b> (Regression) </a></td><td class="numi">1</td><td>1525190242369</td><td class="numi">10035</td></tr>
 </table>
 <h1>loginTest</h1>
-<h2 id="m1">home.MenuBar:validateCoursesButton</h2>
-<div style="padding-left:3em">
-<p>no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//ul[@class=&apos;nav navbar-nav navbar-right&apos;]/li[2]/aaa&quot;}
-  (Session info: chrome=66.0.3359.117)
-  (Driver info: chromedriver=2.37.544315 (730aa6a5fdba159ac9f4c1e8cbc59bf1b5ce12b7),platform=Windows NT 10.0.15063 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 0 milliseconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;3.11.0&apos;, revision: &apos;e59cfb3&apos;, time: &apos;2018-03-11T20:26:55.152Z&apos;
-System info: host: &apos;LAPTOP-V5LK2TQE&apos;, ip: &apos;192.168.43.220&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_131&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.37.544315 (730aa6a5fdba15..., userDataDir: C:\Users\UDAY\AppData\Local...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 66.0.3359.117, webStorageEnabled: true}
-Session ID: 343feca5d04893d43c95fb04bc56b3ec
-*** Element info: {Using=xpath, value=//ul[@class=&apos;nav navbar-nav navbar-right&apos;]/li[2]/aaa}</p>
-sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-<br/>at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-<br/>at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-<br/>at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
-<br/>at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
-<br/>at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
-<br/>at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
-<br/>at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
-<br/>at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
-<br/>at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-<br/>at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-<br/>at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
-<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:319)
-<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:421)
-<br/>at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
-<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:311)
-<br/>at pageObjects.HomePage.getCoursesButton(HomePage.java:41)
-<br/>at home.MenuBar.validateCoursesButton(MenuBar.java:55)
-<br/>29 lines not shown
-</div>
-<p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m2">home.MenuBar:validateVideosButton</h2>
-<p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m3">home.MenuBar:validateAboutButton</h2>
-<p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m4">home.HomePageNavigation:basepage_navigation</h2>
+<h2 id="m1">home.HomePageNavigation:basepage_navigation</h2>
 <table cellspacing="0" cellpadding="0" class="result">
 <tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr>
 <tr class="param stripe"><td>udaykumar@gmail.com</td>
@@ -88,13 +48,13 @@ sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 </tr>
 </table>
 <p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m5">home.MenuBar:validatePracticeButton</h2>
+<h2 id="m2">home.MenuBar:validatePracticeButton</h2>
 <p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m6">home.MenuBar:validateHomeButton</h2>
+<h2 id="m3">home.MenuBar:validateAboutButton</h2>
 <p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m7">home.MenuBar:validateBlogButton</h2>
+<h2 id="m4">home.MenuBar:validateHomeButton</h2>
 <p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m8">home.HomePageNavigation:basepage_navigation</h2>
+<h2 id="m5">home.HomePageNavigation:basepage_navigation</h2>
 <table cellspacing="0" cellpadding="0" class="result">
 <tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr>
 <tr class="param stripe"><td>uday@hmail.com</td>
@@ -102,8 +62,6 @@ sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 </tr>
 </table>
 <p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m9">home.MenuBar:validateInterviewGuideButton</h2>
-<p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m10">home.MenuBar:validateContactButton</h2>
+<h2 id="m6">home.MenuBar:validateVideosButton</h2>
 <p class="totop"><a href="#summary">back to summary</a></p>
 </body></html>

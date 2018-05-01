@@ -15,6 +15,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.htmlunit.HtmlUnitDriver;
 import org.testng.Assert;
 
 import com.aventstack.extentreports.ExtentReports;
@@ -32,7 +33,7 @@ public class Base extends TestUtil{
 	public static ExtentHtmlReporter htmlReporter;
 	public static ExtentTest parentTest;
 	public static ExtentTest childTest;
-	public static ExtentTest grandChildTest;
+	
 	public static final DateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd hh-mm-ss");
 	public static final Date date = new Date();
 	
@@ -74,12 +75,16 @@ public class Base extends TestUtil{
 		else if(browserName.equals("firefox"))
 		{
 			
-			System.setProperty("webdriver.chrome.driver", "D:\\Selenium\\chromedriver.exe");
+			System.setProperty("webdriver.gecko.driver","D:\\Selenium\\geckodriver.exe");
 			driver = new FirefoxDriver();
 		}
 		else if(browserName.equals("IE"))
 		{
 			
+		}
+		else if(browserName.equals("htmlunit"))
+		{
+			driver = new HtmlUnitDriver();
 		}
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		

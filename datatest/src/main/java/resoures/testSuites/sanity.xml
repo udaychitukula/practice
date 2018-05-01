@@ -2,6 +2,11 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Sanity-Suite">
   <test name="loginTest">
+  <groups>
+	  	<run>
+	  	<include name="Sanity"/>
+	  	</run>
+	  </groups>
     <classes>
     <class name="home.BaseTestSuite"/>
    	  <class name="home.MenuBar"/>

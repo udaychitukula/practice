@@ -35,7 +35,7 @@ public class HomePageNavigation extends Base{
 		childTest=parentTest.createNode("TC001", "validate login functionality with valid use ID and ped");
 	}
 	
-	@Test(dataProvider="getData")
+	@Test(dataProvider="getData", groups= {"Regression", "Sanity"})
 	public void basepage_navigation(String username, String password) throws IOException
 	{
 				

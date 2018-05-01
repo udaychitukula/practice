@@ -2,6 +2,11 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Regression-Suite">
   <test name="loginTest">
+	  <groups>
+	  	<run>
+	  	<include name="Regression"/>
+	  	</run>
+	  </groups>
     <classes>
     <class name="home.BaseTestSuite"/>
     <class name="home.HomePageNavigation"/>

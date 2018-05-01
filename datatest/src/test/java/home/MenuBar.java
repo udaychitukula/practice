@@ -30,7 +30,7 @@ public class MenuBar extends Base{
 		driver=initializeDriver();
 		loadPageObjets(driver);
 	}
-	@Test(priority=1)
+	@Test(priority=1, groups= {"Regression"})
 	public void validateHomeButton() throws IOException, InterruptedException 
 	{
 		childTest=parentTest.createNode("TC001", "Verify homepage button functionality in Menu ba");
@@ -45,7 +45,7 @@ public class MenuBar extends Base{
 		Assert.assertEquals(driver.getCurrentUrl().contains("index.php"), true, "Index page is not loaded");
 		childTest.pass("verify that index page is loaded");
 	}
-	@Test(priority=2)
+	@Test(priority=2, groups= {"Sanity"})
 	public void validateCoursesButton() throws IOException, InterruptedException 
 	{
 		childTest=parentTest.createNode("testcase_2", "Verify Courses button functionality in Menu bar");
@@ -62,7 +62,7 @@ public class MenuBar extends Base{
 		Assert.assertEquals(coursesPage.getPageTitle().getText().contains("COURSES"), true, "Courses page not loaded");
 		childTest.pass("verify that courses page is loaded");
 	}
-	@Test(priority=3)
+	@Test(priority=3, groups= {"Regression"})
 	public void validateVideosButton() throws IOException, InterruptedException 
 	{
 		childTest=parentTest.createNode("testcase_3", "Verify Videos button functionality in Menu bar");
@@ -78,7 +78,7 @@ public class MenuBar extends Base{
 		log.info("Menu button verified");
 		System.out.println("");
 	}
-	@Test(priority=4)
+	@Test(priority=4, groups= {"Sanity"})
 	public void validateInterviewGuideButton() throws IOException, InterruptedException 
 	{
 		childTest=parentTest.createNode("testcase_4", "Verify Interview Guide button functionality in Menu bar");
@@ -92,7 +92,7 @@ public class MenuBar extends Base{
 		homePage.getInterviewGuideButton().click();
 		log.info("Menu button verified");
 	}
-	@Test(priority=5)
+	@Test(priority=5, groups= {"Regression"})
 	public void validatePracticeButton() throws IOException, InterruptedException 
 	{
 		childTest=parentTest.createNode("testcase_5", "Verify Practice button functionality in Menu bar");
@@ -106,7 +106,7 @@ public class MenuBar extends Base{
 		homePage.getPracticeButton().click();
 		log.info("Menu button verified");
 	}
-	@Test(priority=6)
+	@Test(priority=6, groups= {"Sanity"})
 	public void validateBlogButton() throws IOException, InterruptedException 
 	{
 		childTest=parentTest.createNode("testcase_6", "Verify Blog button functionality in Menu bar");
@@ -120,7 +120,7 @@ public class MenuBar extends Base{
 		homePage.getBlogButton().click();
 		log.info("Menu button verified");
 	}
-	@Test(priority=7)
+	@Test(priority=7, groups= {"Regression"})
 	public void validateAboutButton() throws IOException, InterruptedException 
 	{
 		childTest=parentTest.createNode("testcase_7", "Verify About button functionality in Menu bar");
@@ -134,7 +134,7 @@ public class MenuBar extends Base{
 		homePage.getAboutButton().click();
 		log.info("Menu button verified");
 	}
-	@Test(priority=8)
+	@Test(priority=8, groups= {"Sanity"})
 	public void validateContactButton() throws IOException, InterruptedException 
 	{
 		childTest=parentTest.createNode("testcase_8", "Verify Contact button functionality in Menu bar");

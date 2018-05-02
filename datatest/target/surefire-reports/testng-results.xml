@@ -1,31 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="6" passed="6">
+<testng-results skipped="0" failed="0" total="2" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Regression-Suite" duration-ms="112538" started-at="2018-05-02T05:09:02Z" finished-at="2018-05-02T05:10:54Z">
+  <suite name="Regression-Suite" duration-ms="58310" started-at="2018-05-02T08:03:22Z" finished-at="2018-05-02T08:04:20Z">
     <groups>
       <group name="Sanity">
-        <method signature="HomePageNavigation.basepage_navigation(java.lang.String, java.lang.String)[pri:0, instance:home.HomePageNavigation@1f59a598]" name="basepage_navigation" class="home.HomePageNavigation"/>
+        <method signature="HomePageNavigation.basepage_navigation(java.lang.String, java.lang.String)[pri:0, instance:home.HomePageNavigation@8c3b9d]" name="basepage_navigation" class="home.HomePageNavigation"/>
       </group> <!-- Sanity -->
       <group name="Regression">
-        <method signature="HomePageNavigation.basepage_navigation(java.lang.String, java.lang.String)[pri:0, instance:home.HomePageNavigation@1f59a598]" name="basepage_navigation" class="home.HomePageNavigation"/>
-        <method signature="MenuBar.validateAboutButton()[pri:0, instance:home.MenuBar@10aa41f2]" name="validateAboutButton" class="home.MenuBar"/>
-        <method signature="MenuBar.validateHomeButton()[pri:0, instance:home.MenuBar@10aa41f2]" name="validateHomeButton" class="home.MenuBar"/>
-        <method signature="MenuBar.validatePracticeButton()[pri:0, instance:home.MenuBar@10aa41f2]" name="validatePracticeButton" class="home.MenuBar"/>
-        <method signature="MenuBar.validateVideosButton()[pri:0, instance:home.MenuBar@10aa41f2]" name="validateVideosButton" class="home.MenuBar"/>
+        <method signature="HomePageNavigation.basepage_navigation(java.lang.String, java.lang.String)[pri:0, instance:home.HomePageNavigation@8c3b9d]" name="basepage_navigation" class="home.HomePageNavigation"/>
       </group> <!-- Regression -->
     </groups>
-    <test name="loginTest" duration-ms="112538" started-at="2018-05-02T05:09:02Z" finished-at="2018-05-02T05:10:54Z">
+    <test name="loginTest" duration-ms="58310" started-at="2018-05-02T08:03:22Z" finished-at="2018-05-02T08:04:20Z">
       <class name="home.HomePageNavigation">
-        <test-method status="PASS" signature="testSetup()[pri:0, instance:home.HomePageNavigation@1f59a598]" name="testSetup" is-config="true" duration-ms="4" started-at="2018-05-02T10:39:02Z" finished-at="2018-05-02T10:39:02Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testSetup -->
-        <test-method status="PASS" signature="setup()[pri:0, instance:home.HomePageNavigation@1f59a598]" name="setup" is-config="true" duration-ms="6177" started-at="2018-05-02T10:39:02Z" finished-at="2018-05-02T10:39:08Z">
+        <test-method status="PASS" signature="setup()[pri:0, instance:home.HomePageNavigation@8c3b9d]" name="setup" is-config="true" duration-ms="7517" started-at="2018-05-02T13:33:22Z" finished-at="2018-05-02T13:33:30Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="basepage_navigation(java.lang.String, java.lang.String)[pri:0, instance:home.HomePageNavigation@1f59a598]" name="basepage_navigation" duration-ms="23913" started-at="2018-05-02T10:39:08Z" data-provider="getData" finished-at="2018-05-02T10:39:32Z">
+        <test-method status="PASS" signature="testSetup()[pri:0, instance:home.HomePageNavigation@8c3b9d]" name="testSetup" is-config="true" duration-ms="0" started-at="2018-05-02T13:33:22Z" finished-at="2018-05-02T13:33:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSetup -->
+        <test-method status="PASS" signature="basepage_navigation(java.lang.String, java.lang.String)[pri:0, instance:home.HomePageNavigation@8c3b9d]" name="basepage_navigation" duration-ms="22056" started-at="2018-05-02T13:33:30Z" data-provider="getData" finished-at="2018-05-02T13:33:52Z">
           <params>
             <param index="0">
               <value>
@@ -41,22 +37,22 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- basepage_navigation -->
-        <test-method status="PASS" signature="setTestResult(org.testng.ITestResult)[pri:0, instance:home.HomePageNavigation@1f59a598]" name="setTestResult" is-config="true" duration-ms="1924" started-at="2018-05-02T10:39:32Z" finished-at="2018-05-02T10:39:34Z">
+        <test-method status="PASS" signature="setTestResult(org.testng.ITestResult)[pri:0, instance:home.HomePageNavigation@8c3b9d]" name="setTestResult" is-config="true" duration-ms="2617" started-at="2018-05-02T13:33:52Z" finished-at="2018-05-02T13:33:54Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=basepage_navigation status=SUCCESS method=HomePageNavigation.basepage_navigation(java.lang.String, java.lang.String)[pri:0, instance:home.HomePageNavigation@1f59a598] output={null}]]]>
+                <![CDATA[[TestResult name=basepage_navigation status=SUCCESS method=HomePageNavigation.basepage_navigation(java.lang.String, java.lang.String)[pri:0, instance:home.HomePageNavigation@8c3b9d] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setTestResult -->
-        <test-method status="PASS" signature="setup()[pri:0, instance:home.HomePageNavigation@1f59a598]" name="setup" is-config="true" duration-ms="4969" started-at="2018-05-02T10:39:34Z" finished-at="2018-05-02T10:39:39Z">
+        <test-method status="PASS" signature="setup()[pri:0, instance:home.HomePageNavigation@8c3b9d]" name="setup" is-config="true" duration-ms="5162" started-at="2018-05-02T13:33:54Z" finished-at="2018-05-02T13:33:59Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="basepage_navigation(java.lang.String, java.lang.String)[pri:0, instance:home.HomePageNavigation@1f59a598]" name="basepage_navigation" duration-ms="15286" started-at="2018-05-02T10:39:39Z" data-provider="getData" finished-at="2018-05-02T10:39:54Z">
+        <test-method status="PASS" signature="basepage_navigation(java.lang.String, java.lang.String)[pri:0, instance:home.HomePageNavigation@8c3b9d]" name="basepage_navigation" duration-ms="17567" started-at="2018-05-02T13:33:59Z" data-provider="getData" finished-at="2018-05-02T13:34:17Z">
           <params>
             <param index="0">
               <value>
@@ -72,121 +68,39 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- basepage_navigation -->
-        <test-method status="PASS" signature="setTestResult(org.testng.ITestResult)[pri:0, instance:home.HomePageNavigation@1f59a598]" name="setTestResult" is-config="true" duration-ms="870" started-at="2018-05-02T10:39:54Z" finished-at="2018-05-02T10:39:55Z">
+        <test-method status="PASS" signature="setTestResult(org.testng.ITestResult)[pri:0, instance:home.HomePageNavigation@8c3b9d]" name="setTestResult" is-config="true" duration-ms="3250" started-at="2018-05-02T13:34:17Z" finished-at="2018-05-02T13:34:20Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=basepage_navigation status=SUCCESS method=HomePageNavigation.basepage_navigation(java.lang.String, java.lang.String)[pri:0, instance:home.HomePageNavigation@1f59a598] output={null}]]]>
+                <![CDATA[[TestResult name=basepage_navigation status=SUCCESS method=HomePageNavigation.basepage_navigation(java.lang.String, java.lang.String)[pri:0, instance:home.HomePageNavigation@8c3b9d] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setTestResult -->
-        <test-method status="PASS" signature="closeup()[pri:0, instance:home.HomePageNavigation@1f59a598]" name="closeup" is-config="true" duration-ms="114" started-at="2018-05-02T10:39:55Z" finished-at="2018-05-02T10:39:55Z">
+        <test-method status="PASS" signature="closeup()[pri:0, instance:home.HomePageNavigation@8c3b9d]" name="closeup" is-config="true" duration-ms="125" started-at="2018-05-02T13:34:20Z" finished-at="2018-05-02T13:34:20Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeup -->
       </class> <!-- home.HomePageNavigation -->
       <class name="home.BaseTestSuite">
-        <test-method status="PASS" signature="startSuite(org.testng.ITestContext)[pri:0, instance:home.BaseTestSuite@3af9c5b7]" name="startSuite" is-config="true" duration-ms="236" started-at="2018-05-02T10:39:02Z" finished-at="2018-05-02T10:39:02Z">
+        <test-method status="PASS" signature="startSuite(org.testng.ITestContext)[pri:0, instance:home.BaseTestSuite@757277dc]" name="startSuite" is-config="true" duration-ms="188" started-at="2018-05-02T13:33:22Z" finished-at="2018-05-02T13:33:22Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@7d61eccf]]>
+                <![CDATA[org.testng.TestRunner@3bffddff]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startSuite -->
-        <test-method status="PASS" signature="endSuite()[pri:0, instance:home.BaseTestSuite@3af9c5b7]" name="endSuite" is-config="true" duration-ms="148" started-at="2018-05-02T10:40:55Z" finished-at="2018-05-02T10:40:55Z">
+        <test-method status="PASS" signature="endSuite()[pri:0, instance:home.BaseTestSuite@757277dc]" name="endSuite" is-config="true" duration-ms="78" started-at="2018-05-02T13:34:20Z" finished-at="2018-05-02T13:34:21Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- endSuite -->
       </class> <!-- home.BaseTestSuite -->
-      <class name="home.MenuBar">
-        <test-method status="PASS" signature="testSetup()[pri:0, instance:home.MenuBar@10aa41f2]" name="testSetup" is-config="true" duration-ms="0" started-at="2018-05-02T10:39:55Z" finished-at="2018-05-02T10:39:55Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testSetup -->
-        <test-method status="PASS" signature="setup()[pri:0, instance:home.MenuBar@10aa41f2]" name="setup" is-config="true" duration-ms="7334" started-at="2018-05-02T10:39:55Z" finished-at="2018-05-02T10:40:02Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method status="PASS" signature="validateHomeButton()[pri:0, instance:home.MenuBar@10aa41f2]" name="validateHomeButton" duration-ms="8404" started-at="2018-05-02T10:40:02Z" finished-at="2018-05-02T10:40:11Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- validateHomeButton -->
-        <test-method status="PASS" signature="setTestResult(org.testng.ITestResult)[pri:0, instance:home.MenuBar@10aa41f2]" name="setTestResult" is-config="true" duration-ms="1089" started-at="2018-05-02T10:40:11Z" finished-at="2018-05-02T10:40:12Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=validateHomeButton status=SUCCESS method=MenuBar.validateHomeButton()[pri:0, instance:home.MenuBar@10aa41f2] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setTestResult -->
-        <test-method status="PASS" signature="setup()[pri:0, instance:home.MenuBar@10aa41f2]" name="setup" is-config="true" duration-ms="4350" started-at="2018-05-02T10:40:12Z" finished-at="2018-05-02T10:40:16Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method status="PASS" signature="validateVideosButton()[pri:0, instance:home.MenuBar@10aa41f2]" name="validateVideosButton" duration-ms="8002" started-at="2018-05-02T10:40:16Z" finished-at="2018-05-02T10:40:24Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- validateVideosButton -->
-        <test-method status="PASS" signature="setTestResult(org.testng.ITestResult)[pri:0, instance:home.MenuBar@10aa41f2]" name="setTestResult" is-config="true" duration-ms="820" started-at="2018-05-02T10:40:24Z" finished-at="2018-05-02T10:40:25Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=validateVideosButton status=SUCCESS method=MenuBar.validateVideosButton()[pri:0, instance:home.MenuBar@10aa41f2] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setTestResult -->
-        <test-method status="PASS" signature="setup()[pri:0, instance:home.MenuBar@10aa41f2]" name="setup" is-config="true" duration-ms="4827" started-at="2018-05-02T10:40:25Z" finished-at="2018-05-02T10:40:30Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method status="PASS" signature="validatePracticeButton()[pri:0, instance:home.MenuBar@10aa41f2]" name="validatePracticeButton" duration-ms="12629" started-at="2018-05-02T10:40:30Z" finished-at="2018-05-02T10:40:43Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- validatePracticeButton -->
-        <test-method status="PASS" signature="setTestResult(org.testng.ITestResult)[pri:0, instance:home.MenuBar@10aa41f2]" name="setTestResult" is-config="true" duration-ms="2619" started-at="2018-05-02T10:40:43Z" finished-at="2018-05-02T10:40:45Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=validatePracticeButton status=SUCCESS method=MenuBar.validatePracticeButton()[pri:0, instance:home.MenuBar@10aa41f2] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setTestResult -->
-        <test-method status="PASS" signature="setup()[pri:0, instance:home.MenuBar@10aa41f2]" name="setup" is-config="true" duration-ms="2875" started-at="2018-05-02T10:40:45Z" finished-at="2018-05-02T10:40:48Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method status="PASS" signature="validateAboutButton()[pri:0, instance:home.MenuBar@10aa41f2]" name="validateAboutButton" duration-ms="5622" started-at="2018-05-02T10:40:48Z" finished-at="2018-05-02T10:40:54Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- validateAboutButton -->
-        <test-method status="PASS" signature="setTestResult(org.testng.ITestResult)[pri:0, instance:home.MenuBar@10aa41f2]" name="setTestResult" is-config="true" duration-ms="698" started-at="2018-05-02T10:40:54Z" finished-at="2018-05-02T10:40:54Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=validateAboutButton status=SUCCESS method=MenuBar.validateAboutButton()[pri:0, instance:home.MenuBar@10aa41f2] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setTestResult -->
-      </class> <!-- home.MenuBar -->
     </test> <!-- loginTest -->
   </suite> <!-- Regression-Suite -->
 </testng-results>

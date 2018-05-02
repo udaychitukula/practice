@@ -9,10 +9,8 @@
 	  </groups>
     <classes>
     <class name="home.BaseTestSuite"/>
-	    
-   	  <class name="home.MenuBar"/>
+	  <class name="home.MenuBar"/>
 	  <class name="home.HomePageNavigation"/>
-	  
-    </classes>
+	</classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

@@ -23,7 +23,7 @@
         <configuration>
           <suiteXmlFiles>
             <suiteXmlFile>src\main\java\resoures\testSuites\regression.xml</suiteXmlFile>
-            <suiteXmlFile>src\main\java\resoures\testSuites\sanity.xml</suiteXmlFile> 
+           <!-- <suiteXmlFile>src\main\java\resoures\testSuites\sanity.xml</suiteXmlFile> -->
           </suiteXmlFiles>
         </configuration>
       </plugin>

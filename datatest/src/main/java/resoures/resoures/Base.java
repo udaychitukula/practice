@@ -48,8 +48,9 @@ public class Base extends TestUtil{
 	public static void initReports(String suiteName)
 	{
 		reports = new ExtentReports();
-    	htmlReporter = new ExtentHtmlReporter(System.getProperty("user.dir")+"//test-reports//"+suiteName+"-report "+dateFormat.format(date)+".html");
-    	reports.attachReporter(htmlReporter);
+    	//htmlReporter = new ExtentHtmlReporter(System.getProperty("user.dir")+"//test-reports//"+suiteName+"-report "+dateFormat.format(date)+".html");
+		htmlReporter = new ExtentHtmlReporter(System.getProperty("user.dir")+"//test-output//reports.html");
+		reports.attachReporter(htmlReporter);
     	
     	reports.setSystemInfo("Machine", "Uday-123");
     	reports.setSystemInfo("Browser", "FireFox");

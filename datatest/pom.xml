@@ -22,7 +22,7 @@
         <version>2.21.0</version>
         <configuration>
           <suiteXmlFiles>
-           <!--  <suiteXmlFile>src\main\java\resoures\testSuites\regression.xml</suiteXmlFile>-->
+            <suiteXmlFile>src\main\java\resoures\testSuites\regression.xml</suiteXmlFile>
             <suiteXmlFile>src\main\java\resoures\testSuites\sanity.xml</suiteXmlFile> 
           </suiteXmlFiles>
         </configuration>

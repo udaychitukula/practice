@@ -16,7 +16,7 @@ public class HomePage {
 	By popup=By.xpath(".//*[@id='homepage']/div[5]/div[2]/div/div/div/span/div/div[7]/div/div/div[2]");
 	//By homeButton=By.xpath("//a[@href='index.php']");
 	By homeButton=By.xpath("//ul[@class='nav navbar-nav navbar-right']/li[1]/a");
-	By coursesButton=By.xpath("//ul[@class='nav navbar-nav navbar-right']/li[2]/aaa");
+	By coursesButton=By.xpath("//ul[@class='nav navbar-nav navbar-right']/li[2]/a");
 	By videosButton=By.xpath("//ul[@class='nav navbar-nav navbar-right']/li[3]/a");
 	By interviewGuideButton=By.xpath("//ul[@class='nav navbar-nav navbar-right']/li[4]/a");
 	By praticeButton=By.xpath("//ul[@class='nav navbar-nav navbar-right']/li[5]/a");

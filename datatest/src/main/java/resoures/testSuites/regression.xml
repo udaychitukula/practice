@@ -10,7 +10,7 @@
     <classes>
     <class name="home.BaseTestSuite"/>
     <class name="home.HomePageNavigation"/>
-   	<!--  <class name="home.MenuBar"/> -->
+   	 <class name="home.MenuBar"/>
 	  
     </classes>
   </test> <!-- Test -->

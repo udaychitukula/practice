@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Failed suite [Suite]" duration-ms="20546" started-at="2018-04-19T19:24:11Z" finished-at="2018-04-19T19:24:31Z">
+    <groups>
+    </groups>
+    <test name="Test(failed)" duration-ms="20546" started-at="2018-04-19T19:24:11Z" finished-at="2018-04-19T19:24:31Z">
+      <class name="home.MenuBar">
+        <test-method status="PASS" signature="setup()[pri:0, instance:home.MenuBar@6b81ce95]" name="setup" is-config="true" duration-ms="4994" started-at="2018-04-20T00:54:11Z" finished-at="2018-04-20T00:54:16Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="validateHomeButton()[pri:0, instance:home.MenuBar@6b81ce95]" name="validateHomeButton" duration-ms="13414" started-at="2018-04-20T00:54:16Z" finished-at="2018-04-20T00:54:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateHomeButton -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:home.MenuBar@6b81ce95]" name="tearDown" is-config="true" duration-ms="2105" started-at="2018-04-20T00:54:29Z" finished-at="2018-04-20T00:54:31Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- home.MenuBar -->
+    </test> <!-- Test(failed) -->
+  </suite> <!-- Failed suite [Suite] -->
+</testng-results>
